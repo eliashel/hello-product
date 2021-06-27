@@ -22,3 +22,5 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 hello-app/.aws-sam/build/template.yaml
+hello-app/HelloWorldFunction/dependency-reduced-pom.xml
+hello-app/HelloWorldFunction/target
