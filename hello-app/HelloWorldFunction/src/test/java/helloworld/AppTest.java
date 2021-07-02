@@ -1,22 +1,23 @@
 package helloworld;
 
 import com.amazonaws.services.lambda.runtime.events.APIGatewayProxyResponseEvent;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-public class AppTest {
+
+class AppTest {
+
   @Test
-  public void successfulResponse() {
+  void successfulResponse() {
     App app = new App();
     APIGatewayProxyResponseEvent result = app.handleRequest(null, null);
-    assertEquals(result.getStatusCode().intValue(), 200);
-    assertEquals(result.getHeaders().get("Content-Type"), "application/json");
+
+    Assertions.assertEquals(200, result.getStatusCode().intValue());
+    Assertions.assertEquals("application/json", result.getHeaders().get("Content-Type"));
     String content = result.getBody();
-    assertNotNull(content);
-    assertTrue(content.contains("\"message\""));
-    assertTrue(content.contains("hello world"));
-    assertTrue(content.contains("\"location\""));
+    Assertions.assertNotNull(content);
+    Assertions.assertTrue(content.contains("\"message\""));
+    Assertions.assertTrue(content.contains("hello world"));
+    Assertions.assertTrue(content.contains("\"location\""));
   }
 }
