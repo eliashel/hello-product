@@ -15,9 +15,6 @@ on:
   push:
     branches:
       - master
-      - develop
-      - quality
-      - staging
   pull_request:
     # The branches below must be a subset of the branches above
     branches:
@@ -25,7 +22,9 @@ on:
       - develop
       - quality
       - staging
-  
+  schedule:
+    - cron: '21 20 * * 4'
+
 jobs:
   analyze:
     name: Analyze
