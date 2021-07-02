@@ -26,3 +26,6 @@ hello-app/HelloWorldFunction/dependency-reduced-pom.xml
 hello-app/HelloWorldFunction/target
 hello-app/HelloWorldFunction/HelloWorld.iml
 .idea
+hello-app/HelloWorldFunction/.classpath
+hello-app/HelloWorldFunction/.project
+hello-app/HelloWorldFunction/.settings
