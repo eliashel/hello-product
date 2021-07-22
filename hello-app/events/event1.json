@@ -1,0 +1,25 @@
+{
+    "resource": "/hello",
+    "path": "/hello",
+    "httpMethod": "GET",
+    "requestContext": {
+        "accountId": "681989517074",
+        "resourceId": "7oel9g",
+        "stage": "test-invoke-stage",
+        "requestId": "88e6ec9e-1622-4472-8b40-e55247214ec0",
+        "identity": {
+            "accountId": "681989517074",
+            "caller": "AROAZ5SN6F4JNYSJV2O3R:eelhelou@cobiscorp.com",
+            "apiKey": "test-invoke-api-key",
+            "sourceIp": "test-invoke-source-ip",
+            "userArn": "arn:aws:sts: : 681989517074:assumed-role/AWSReservedSSO_COBDevelopers_393cecdba70bdb22/eelhelou@cobiscorp.com",
+            "userAgent": "aws-internal/3 aws-sdk-java/1.11.1030 Linux/5.4.116-64.217.amzn2int.x86_64 OpenJDK_64-Bit_Server_VM/25.292-b10 java/1.8.0_292 vendor/Oracle_Corporation cfg/retry-mode/legacy",
+            "user": "AROAZ5SN6F4JNYSJV2O3R:eelhelou@cobiscorp.com,accessKey: ASIAZ5SN6F4JEPZ5FXAW"
+        },
+        "resourcePath": "/hello",
+        "httpMethod": "GET",
+        "apiId": "l4li6vs3x3",
+        "path": "/hello"
+    },
+    "isBase64Encoded": false
+}

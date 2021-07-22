@@ -1,0 +1,10 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "ees-asyncevent-app"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1rs8miw3huk54"
+s3_prefix = "ees-asyncevent-app"
+region = "us-east-1"
+capabilities = "CAPABILITY_IAM"
+
